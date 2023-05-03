@@ -13,7 +13,6 @@ export default function Home() {
       alert("Razorpay SDK Failed to load");
       return;
     }
-
     // Make API call to the serverless API
     const data = await fetch("/api/razorpay", { method: "POST" }).then((t) =>
       t.json()
