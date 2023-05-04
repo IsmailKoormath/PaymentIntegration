@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Element } from "../components/Element";
 import { Navbar } from "../components/Navbar";
 import styles from "../styles/Home.module.css";
-
 export default function Home() {
   const makePayment = async () => {
     console.log("here...");
@@ -20,7 +19,7 @@ export default function Home() {
     console.log(data);
     var options = {
       key: process.env.RAZORPAY_KEY, // Enter the Key ID generated from the Dashboard
-      name: "Manu Arora Pvt Ltd",
+      name: "Ismail k Pvt Ltd",
       currency: data.currency,
       amount: data.amount,
       order_id: data.id,
@@ -33,8 +32,8 @@ export default function Home() {
         alert(response.razorpay_signature);
       },
       prefill: {
-        name: "Manu Arora",
-        email: "manuarorawork@gmail.com",
+        name: "Ismail k",
+        email: "ismailkoormath@gmail.com",
         contact: "9999999999",
       },
     };
