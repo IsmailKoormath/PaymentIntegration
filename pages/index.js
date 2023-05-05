@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+// import Image from "next/image";
 import { Element } from "../components/Element";
 import { Navbar } from "../components/Navbar";
 import styles from "../styles/Home.module.css";
@@ -12,6 +12,7 @@ export default function Home() {
       alert("Razorpay SDK Failed to load");
       return;
     }
+
     // Make API call to the serverless API
     const data = await fetch("/api/razorpay", { method: "POST" }).then((t) =>
       t.json()
